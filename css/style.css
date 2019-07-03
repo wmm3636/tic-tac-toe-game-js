@@ -1,0 +1,131 @@
+body {
+    background-color: gainsboro;
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/demo-1-bg.jpg');
+    /* margin:0 auto;
+    width: 40%;
+    padding: 10px; */
+}
+
+header {
+    font-family: cursive;
+    font-size: 25px;
+    color: rgb(213, 219, 224);
+    text-align: center;
+    margin: 50px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+#result {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(203, 210, 218)
+}
+
+canvas {
+    background-color: rgb(239, 247, 255,0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+canvas:hover {
+    background-color: gainsboro;
+}
+
+#game {
+    position: relative;
+    /* padding-left: 450px;  */
+    margin: 10px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#tic {
+    position: relative;
+    display: inline-block;
+    float: left; 
+}
+
+
+#score {
+    color: rgb(214, 203, 203);
+    /* text-decoration: ; */
+    text-decoration-style: solid;
+    position: relative;
+    /* width: 318px;
+    height: 318px; */
+    margin-left: 10px; 
+    justify-content: center;
+    display: inline-block;
+    float: right;
+}
+
+
+button {
+    /* padding: 0;
+    margin: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid black; */
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #d8e7e77e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .centerBoard {
+      display: flex;
+      justify-content: center
+  }
