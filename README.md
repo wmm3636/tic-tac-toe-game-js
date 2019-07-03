@@ -38,5 +38,3 @@ https://miro.com/app/board/o9J_kxRMpOI=/
 - www.stackoverflow.com
 - https://developer.mozilla.org
 - https://tympanus.net
-- 
-- 
